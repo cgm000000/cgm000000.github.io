@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jimena y Carlos<3</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #C474DF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-align: center;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 800px; /* Ajusta el ancho máximo si quieres */
+        }
+
+        .photo {
+            width: 150px;
+            height: 150px;
+            background-color: #dbb588;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .photo:hover {
+            transform: scale(1.1);
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 150%;
+            background-image: url('imagenes/amor.png'); 
+            background-repeat: repeat; 
+            background-size: 100px 100px; 
+            opacity: 0.2; 
+            z-index: -1; 
+            background-repeat: repeat;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Nuestros recuerdos para siempre</h1>
+    <div class="gallery">
+        <div class="photo"><img src="imagenes/foto4.jpg" alt="Foto 1"></div>
+        <div class="photo"><img src="imagenes/foto2.jpg" alt="Foto 2"></div>
+        <div class="photo"><img src="imagenes/foto3.jpg" alt="Foto 3"></div>
+        <div class="photo"><img src="imagenes/foto1.jpg" alt="Foto 4"></div>
+        <div class="photo"><img src="imagenes/foto5.jpg" alt="Foto 5"></div>
+        <div class="photo"><img src="imagenes/foto6.jpg" alt="Foto 6"></div>
+        <div class="photo"><img src="imagenes/foto7.jpg" alt="Foto 7"></div>
+        <div class="photo"><img src="imagenes/foto8.jpg" alt="Foto 8"></div>
+        <div class="photo"><img src="imagenes/foto9.jpg" alt="Foto 8"></div>
+        <div class="photo"><img src="imagenes/foto14.jpg" alt="Foto 8"></div>
+        <div class="photo"><img src="imagenes/foto15.jpg" alt="Foto 8"></div>
+        <div class="photo"><img src="imagenes/foto10.jpg" alt="Foto 8"></div>
+        <div class="photo"><img src="imagenes/foto11.jpg" alt="Foto 8"></div>
+        <div class="photo"><img src="imagenes/foto12.jpg" alt="Foto 8"></div>
+        <div class="photo"><img src="imagenes/foto13.jpg" alt="Foto 8"></div>
+        
+    </div>
+</body>
+</html>

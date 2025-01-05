@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jimena y Carlos <3</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #C474DF;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 50px;
+        }
+
+        .sections {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .circle {
+            width: 160px;
+            height: 160px;
+            background-color: #dbb588;
+            border: 3px solid #C474DF;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            color: #ffffff;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .circle:hover {
+            background-color: #C474DF;
+            border-color: #dbb588;
+            transform: scale(1.1);
+        }
+
+        .section p {
+            margin-top: 10px;
+            font-size: 1em;
+        }
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('imagenes/amor.png'); 
+            background-repeat: repeat; 
+            background-size: 100px 100px; 
+            opacity: 0.2; 
+            z-index: -1; 
+        }
+    </style>
+</head>
+<body>
+    <h1>¡Bienvenida a nuestra pequeño rinconcito !</h1>
+    <div class="sections">
+        <a href="carta.html">
+        <div class="section">
+            <div class="circle"><img style="width: 100px ;height: 100px;" src="imagenes/carta-de-amor.png" alt="Otros"></div>
+        </div>
+        </a>
+        <a href="fotos.html">
+            <div class="section">
+                <div class="circle"><img style="width: 100px ;height: 100px;" src="imagenes/camara-reflex-digital.png" alt="Otros"></div>
+            </div>
+        </a>
+        <div class="section">
+            <div class="circle"><img style="width: 100px ;height: 100px;" src="imagenes/corazon.png" alt="Otros"></div>
+        </div>
+    </div>
+</body>
+</html>
